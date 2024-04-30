@@ -1,0 +1,40 @@
+.parent {
+    display: grid;
+    grid-template: auto 1fr auto / auto 1fr auto;
+    text-align: center;
+    text-size-adjust: 12;
+}
+
+.header-pink-section {
+    padding: 2rem;
+    grid-column: 1/4;
+    background-color: pink;
+}
+
+.left-side-blue-section {
+    padding: 2rem;
+    grid-column: 1/2;
+    background-color: blue;
+    color: white;
+}
+
+.main-coral-section{
+    padding: 2rem;
+
+    grid-column: 2/3;
+    background-color: coral;
+}
+
+.right-side-yellow-section{
+    padding: 2rem;
+
+    grid-column: 3/4;
+    background-color: yellow;
+}
+
+.footer-greensection{
+    padding: 2rem;
+
+    grid-column: 1/4;
+    background-color: green;
+}
