@@ -2,39 +2,50 @@
     display: grid;
     grid-template: auto 1fr auto / auto 1fr auto;
     text-align: center;
-    text-size-adjust: 12;
 }
 
-.header-pink-section {
+.header-slate {
     padding: 2rem;
     grid-column: 1/4;
-    background-color: pink;
-}
-
-.left-side-blue-section {
-    padding: 2rem;
-    grid-column: 1/2;
-    background-color: blue;
+    background-color: slategray;
     color: white;
 }
+.nav-navy {
+    content: 3rem;
+    padding: 1rem;
+    grid-column: 1/4;
+    background-color: lightcyan;
+    color: white;
+    font-size: 1.75rem
+}
 
-.main-coral-section{
+.left-side-orange {
+    padding: 2rem;
+    grid-column: 1/2;
+    background-color: orange;
+    color: black;
+}
+
+.main-seagreen {
     padding: 2rem;
 
     grid-column: 2/3;
-    background-color: coral;
+    background-color: lightseagreen;
+    color: white;
 }
 
-.right-side-yellow-section{
+.right-side-yellow {
     padding: 2rem;
 
     grid-column: 3/4;
     background-color: yellow;
 }
 
-.footer-green-section{
+.footer-slate{
     padding: 2rem;
-
     grid-column: 1/4;
-    background-color: green;
+    background-color: slategray;
+    color: white;
+    font-size: 1rem;
+
 }
