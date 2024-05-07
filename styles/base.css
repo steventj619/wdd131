@@ -35,7 +35,7 @@ nav a {
 
 nav a:hover {
     text-decoration: overline;
-    color: yellow;
+    color: gold;
 }
 
 main {
@@ -52,20 +52,37 @@ main {
     color: navy;
     margin: 20px;
     padding: 20px;
-    background-color: aqua;
+    background-color: skyblue;
+    font-size: 1.25rem;
 }
 
+.card a {
+    font-size: 1.75rem;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    
+}
+
+.card a:hover {
+    text-decoration: overline;
+    color: black;
+}
 .state {
     padding: 5px;
-    background-color: yellow;
+    background-color: white;
 }
 
 .left{
-    background-color: brown;
+    background-color: white;
+    font-size: 2rem;
 }
+
 .right {
-    background-color: blueviolet;
+    background-color: white;
+    font-size: 2rem;
 }
+
 
 footer {
     grid-row: 3/4;
