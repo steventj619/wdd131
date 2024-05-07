@@ -38,7 +38,6 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 100%;
-    
 }
 
 .card {
@@ -49,7 +48,7 @@ main {
 }
 
 .state {
-    padding: 20px;
+    padding: 5px;
     background-color: yellow;
 }
 
@@ -58,7 +57,6 @@ main {
 }
 .right {
     background-color: blueviolet;
-    display: flexbox;
 }
 
 footer {
