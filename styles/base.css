@@ -38,6 +38,7 @@ main {
     background-color: rgb(212, 212, 212);
     display: grid;
     grid-template-columns: 2fr 1fr;
+    max-width: 75%;
     
 }
 
