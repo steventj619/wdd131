@@ -6,7 +6,6 @@ figure {
     padding: 10px;
     background-color: lightgray;
     display: inline-block;
-    width: calc 33%;
     text-align: center;
     font-size: 1.25rem;
 }
