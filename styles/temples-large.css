@@ -1,0 +1,61 @@
+* {
+    font-family: "Salsa", cursive;
+}
+
+figure {
+    padding: 10px;
+    background-color: lightgray;
+    display: inline-block;
+    width: calc 33%;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+h1 {
+    font-size: 3rem;
+	color: white;
+	padding-left: 2rem;
+	padding-top: 2rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+#menu {
+    display: none;
+}
+
+.navigation {
+	display: flex;
+    justify-content: flex-end;
+    background-color: #31473A;
+
+}
+
+.navigation a {
+    font-size: 1.9rem;
+    padding: 15px;
+	color: white;
+
+}
+
+.navigation a:hover {
+	background-color: lightgray;
+	color: #31473A;
+	font-weight: 700;
+}
+
+/* Styling footer */
+header, footer {
+    background-color: #31473A;
+}
+
+footer {
+ color: white;
+ font-size: 20px;
+ display: flex;
+ padding: 40px;
+ text-align: center;
+}

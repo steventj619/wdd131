@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.salsa-regular {
+    font-family: "Salsa", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Salsa", cursive;
+}
+
+h1 {
+	text-align: left;
+	font-size: 3rem;
+}
+
+h2 {
+	font-size: 1.75rem;
+	color: black;
+	text-align: left;
+	margin: 5px;
+}
+
+navigation {
+	margin: 1rem auto;
+}
+
+.show {
+    display: block;
+}
+
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color:#EDF4F2;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+#menu:hover {
+	color: #31473A;
+	background-color: #EDF4F2;
+}
+
+#menu.open::before {
+	content: "❎";
+}
+
+.navigation {
+	flex-direction: column;
+	display: flex;
+
+}
+
+.navigation a {
+	display: none;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.navigation a:hover {
+	background-color: lightgray;
+	color: #31473A;
+	font-weight: 700;
+}
+
+figure {
+	max-width: 100%;
+	max-height: auto;
+	
+}
+
+
+.open a {
+	display: block;
+}
+
+.active::before { 
+	content: "📍";  
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+header, footer {
+    color: white;
+	background-color: #31473A;
+    padding: 20px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 20px; 
+    padding: 20px; 
+}
+
+figure {
+	padding: 25px;
+	background-color: rgb(255, 255, 255);
+    max-width: 100%; 
+    height: auto;
+    display: block;
+}
+
+footer {
+	font-size: 20px;
+	display: flex;
+	padding: 10px;
+	text-align: center;
+	color: white;
+}
