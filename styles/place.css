@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+
+body {
+    font-family: "Salsa", cursive;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: auto 1fr 1fr 1fr auto;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.skyline img {
+    width: 100%;
+    height: auto;
+}
+
+.weather-img {
+    width: 100%;
+    height: auto;
+}
+
+
+.mobile-only {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    .mobile-only {
+        display: inline;
+    }
+}
+
+main {
+    padding: 20px;
+    margin: 20px;
+}
+
+.data-section{
+    grid-row: 1 / 2;
+    grid-column: 1 / 2
+}
+
+.weather-section{
+    grid-row: 2 / 4;
+    grid-column: 3 / 6
+}
+
+.data-section, .weather-section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.data-section h2, .weather-section h2 {
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+.data-section p, .weather-section p {
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
