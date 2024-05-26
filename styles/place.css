@@ -2,9 +2,7 @@
 
 :root {
     --main-bg-color: #9f0000;
-    /* Define global variable for main background color */
     --main-text-color: #000000;
-    /* Define global variable for main text color */
 }
 
 
@@ -15,8 +13,8 @@ body {
     line-height: 1.6;
     grid-template-rows: auto 1fr auto;
     grid-template-columns: 1fr;
-    background-color: #9f0000;
-    color: #000000;
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
 }
 
 header {
