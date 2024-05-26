@@ -22,29 +22,30 @@
             <div class="skyline">
                 <picture>
                     <source srcset="images/sd-skyline-large.webp" media="(min-width: 750px)">
-                    <img src="images/sd-skyline-small.webp" alt="San Diego Skyline" width="500px" height="250px">
+                    <img src="images/sd-skyline-small.webp" alt="San Diego Skyline">
                 </picture>
             </div>
         
             <div class="data-section">
                 <h2>Data</h2>
-                <p>San Diego is known for its beaches, parks, and warm climate. It's a major city in California, located on the coast of the Pacific Ocean.</p>
-                <p>Population: 1.4 million (as of 2023)</p>
-                <p>Area: 372.4 square miles</p>
-                <p>Major Attractions: Balboa Park, San Diego Zoo, SeaWorld San Diego, Old Town San Diego State Historic Park.</p>
+                <p>Area: 372.42 sq mi (964.56 km2)</p>
+                <p>Population: 1,386,932</p>
+                <p>Time Zone: UTC-08:00 (PST)</p>
+                <p>Area Code: 619/858</p>
+                <p>Major Attractions: Balboa Park, San Diego Zoo, SeaWorld</p>
             </div>
         
             <div class="weather-section">
                 <h2 class="weather-heading">Weather ⛅</h2>
                 <img src="images/1530391_weather_clouds_sun_sunny_icon.svg" alt="Weather Icon" class="mobile-only weather-img" width="500px" height="250px">
-                <p>San Diego enjoys a mild Mediterranean climate with warm, dry summers and mild, wet winters.</p>
-                <p>Average High Temperature: 70°F (21°C)</p>
-                <p>Average Low Temperature: 57°F (14°C)</p>
-                <p>Annual Precipitation: 10 inches (254 mm)</p>
+                <p>Temperature: <span id="temperature">10</span>°C</p>
+                <p>Wind Speed: <span id="wind_speed">5</span>km</p>
+                <p>Wind Chill: <span id="wind_chill">N/A</span></p>
             </div>
         </main>
         <footer>
-            Footer Information 
+            <p><span id="currentyear"></span></p>
+            <p id="lastModified"></p>
         </footer>
     </body>
 </html>

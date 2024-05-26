@@ -6,21 +6,22 @@ body {
     padding: 0;
     line-height: 1.6;
     grid-template-rows: auto 1fr auto;
-    grid-template-columns: auto 1fr 1fr 1fr auto;
-    background-color: #f0f0f0;
-    color: #333;
+    grid-template-columns: 1fr;
+    background-color: #9f0000;
+    color: #000000;
 }
 
 header {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 20px;
     text-align: center;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 5px solid #0a853b;
 }
 
 header h1 {
     margin: 0;
     font-size: 2em;
+    border-bottom: 5px solid #0a853b;
 }
 
 .skyline img {
@@ -46,6 +47,8 @@ header h1 {
 }
 
 main {
+    display: grid;
+    grid-template-columns: 1fr;
     padding: 20px;
     margin: 20px;
 }
@@ -55,31 +58,94 @@ main {
     grid-column: 1 / 2
 }
 
-.weather-section{
-    grid-row: 2 / 4;
-    grid-column: 3 / 6
+@media (min-width: 769) {
+    main {
+        grid-template-columns: 1fr 1fr;
+        gap:20px
+    }
 }
 
 .data-section, .weather-section {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-bottom: 5px solid #0a853b;
 }
 
 .data-section h2, .weather-section h2 {
-    font-size: 1.5em;
+    font-size: 1.75em;
     margin-top: 0;
+    color: #ffffff;
+    border-radius: 20px;
+    background-color: #0a853b;
+    
 }
 
 .data-section p, .weather-section p {
     margin: 10px 0;
+    color: #000000;
+    
 }
 
 footer {
     background-color: #fff;
     padding: 20px;
     text-align: center;
-    border-top: 1px solid #ddd;
+    border-top: 5px solid #0a853b;
+    border-bottom: 5px solid #0a853b;
+}
+
+
+@media screen and (min-width: 768px) {
+    .container {
+        background-image: url('your-background-image-url.jpg');
+        background-size: cover;
+        background-position: center;
+        padding: 20px;
+    }
+
+    .data-section,
+    .weather-section {
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 600px;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .skyline {
+        position: relative;
+    }
+
+    .data-section {
+        position: absolute;
+        .data-section {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        top: 100px;
+        left: 1000px;
+        z-index: 1;
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 10px;
+    }
+        top: 250px;
+        left: 50px;
+        z-index: 1;
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 10px;
+    }
+    .weather-section {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        bottom: 25px;
+        Right: 50px;
+        z-index: 1;
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 10px;
+    }
 }
