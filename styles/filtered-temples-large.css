@@ -1,0 +1,98 @@
+* {
+    font-family: "Salsa", cursive;
+}
+
+figure {
+    padding: 10px;
+    background-color: lightgray;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+h1 {
+    font-size: 3rem;
+	color: white;
+	padding-left: 2rem;
+	padding-top: 2rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+#menu {
+    display: none;
+}
+
+.navigation {
+	display: flex;
+    justify-content: flex-end;
+    background-color: #31473A;
+
+}
+
+.navigation a {
+    font-size: 1.9rem;
+    padding: 15px;
+	color: white;
+
+}
+
+.navigation a:hover {
+	background-color: lightgray;
+	color: #31473A;
+	font-weight: 700;
+}
+
+main {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Stack temple cards vertically */
+    padding: 20px;
+    margin: 0 auto; /* Center horizontally */
+    max-width: 1200px; /* Adjust max-width as needed */
+}
+
+/* Styling footer */
+header, footer {
+    background-color: #31473A;
+}
+.temple-card {
+    border: 5px solid #31473A;
+    border-radius: 8px;
+    margin: 16px;
+    padding: 16px;
+    width: 300px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+	border-radius: 50px;
+}
+
+.temple-card img {
+    width: 100%;
+    border-radius: 50px;
+}
+
+footer {
+ color: white;
+ font-size: 20px;
+ display: flex;
+ padding: 40px;
+ text-align: center;
+}
+
+/* For larger views */
+@media screen and (min-width: 650px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        margin: 0 auto;
+        max-width: 1200px;
+        justify-items: center;
+    }
+}

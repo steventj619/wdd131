@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.salsa-regular {
+    font-family: "Salsa", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    text-align: left;
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+    color: black;
+    text-align: left;
+    margin: 5px;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #EDF4F2;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu:hover {
+    color: #31473A;
+    background-color: #EDF4F2;
+}
+
+#menu.open::before {
+    content: "❎";
+}
+
+.navigation {
+    flex-direction: column;
+    display: flex;
+}
+
+.navigation a {
+    display: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation a:hover {
+    background-color: lightgray;
+    color: #31473A;
+    font-weight: 700;
+}
+
+.navigation.open a {
+    display: block;
+}
+
+.active::before {
+    content: "📍";
+}
+
+header, footer {
+    color: white;
+    background-color: #31473A;
+    padding: 20px;
+}
+
+footer {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Stack temple cards vertically */
+    padding: 20px;
+    margin: 0 auto; /* Center horizontally */
+    max-width: 1200px; /* Adjust max-width as needed */
+}
+
+figure {
+    padding: 25px;
+    background-color: #fff;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.temple-card {
+    border: 5px solid #31473A;
+    border-radius: 8px;
+    margin: 16px;
+    padding: 16px;
+    width: 300px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+	border-radius: 50px;
+}
+
+.temple-card img {
+    width: 100%;
+    border-radius: 50px;
+}
+
+#navMenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+#navMenu li {
+    margin: 0 15px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+#navMenu li:hover {
+    background-color: #ddd;
+}
+
+#templeContainer {
+    padding: 20px;
+    margin: 20px;
+}
+
+.temple {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* For smaller views */
+@media screen and (max-width: 649px) {
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+}

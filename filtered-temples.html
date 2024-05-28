@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="Picture Album - Steven Tran">
+    <meta name="author" content="Steven Tran">
+    <link rel="stylesheet" href="styles/filtered-temples.css" media="screen and (max-width: 649px)">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css" media="screen and (min-width: 650px)">
+    <script defer src="scripts/filtered-temples.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Temples</h1>
+        <button id="menu" class="navigation-toggle"><i class="fa fa-bars" aria-hidden="true"></i>Menu</button>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#" id="home">Home</a></li>
+                <li><a href="#" id="old">Old</a></li>
+                <li><a href="#" id="new">New</a></li>
+                <li><a href="#" id="large">Large</a></li>
+                <li><a href="#" id="small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="temple-cards-container"></section>
+    </main>
+    <footer>
+        <p><span id="currentyear"></span></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
