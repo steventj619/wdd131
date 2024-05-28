@@ -42,8 +42,8 @@ h2 {
     background: none;
     color: #EDF4F2;
     position: absolute;
-    top: 1rem;
-    right: 1rem;
+    top: 3rem;
+    right: 2rem;
 }
 
 #menu::before {
@@ -87,12 +87,16 @@ h2 {
 }
 
 header, footer {
-    color: white;
     background-color: #31473A;
     padding: 20px;
 }
 
+h1 {
+	color: white;
+}
+
 footer {
+	color: white;
     font-size: 20px;
     display: flex;
     justify-content: center;

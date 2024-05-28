@@ -46,6 +46,9 @@ h2 {
 	font-weight: 700;
 }
 
+ul{
+    color: lightgray;
+}
 main {
     display: flex;
     justify-content: center; /* Center horizontally */
@@ -88,7 +91,7 @@ footer {
 @media screen and (min-width: 650px) {
     main {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-rows: auto 1fr; /* Ensure "Temple Selection" is above temple cards */
         gap: 20px;
         padding: 20px;
         margin: 0 auto;
