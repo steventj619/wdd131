@@ -1,3 +1,26 @@
+document.addEventListener('DOMContentLoaded', () => {
+    // Update the current year and last modified date in the footer
+    document.getElementById('currentyear').textContent = new Date().getFullYear();
+    document.getElementById('lastModified').textContent = document.lastModified;
+
+    // Example: Toggle navigation menu on small screens
+    const menuToggle = document.getElementById('menu');
+    const navigation = document.querySelector('nav');
+
+    menuToggle.addEventListener('click', () => {
+        const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+        menuToggle.setAttribute('aria-expanded', !isExpanded);
+        navigation.classList.toggle('open');
+    });
+});
+
+
+
+
+
+
+
+
 const currentYear = new Date().getFullYear();
 const lastModifiedDate = document.lastModified;
 const footerFirst = document.querySelector('footer p:first-of-type');
@@ -106,8 +129,7 @@ function displayTemples(temples) {
             <h2>${temple.templeName}</h2>
             <p><strong>Location:</strong> ${temple.location}</p>
             <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
-            <p><strong>Area:</strong> ${temple.area.toLocaleString()} sq ft</p>
-        `;
+            <p><strong>Area:</strong> ${temple.area.toLocaleString()} sq ft</p>`;
         container.appendChild(card);
     });
 }
@@ -130,7 +152,8 @@ document.querySelector('.navigation').addEventListener('click', (event) => {
         } 
         else if (filter === 'Large') {
             filteredTemples = temples.filter(temple => temple.area > 90000);
-        } else if (filter === 'Small') {
+        } 
+        else if (filter === 'Small') {
             filteredTemples = temples.filter(temple => temple.area < 10000);
         }
 

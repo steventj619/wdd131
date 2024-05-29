@@ -1,0 +1,75 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Gurajada&family=Oleo+Script:wght@400;700&display=swap');
+
+/* Define color variables in :root */
+:root {
+    --main-color: black;
+    --secondary-color: white;
+    --third-color: yellow;
+    --fourth-color: red;
+}
+
+/* Base styles */
+body {
+    font-family: 'Gurajada', sans-serif;
+    color: pink;
+    background-color: var(--secondary-color);
+    margin: 0;
+    padding: 0;
+
+header {
+    background-color: var(--third-color);
+    color: var(--main-color);
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    font-family: 'Bangers', system-ui;
+    font-size: 3em;
+}
+
+main {
+    padding: 40px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-family: 'Oleo Script', system-ui;
+    color: var(--fourth-color);
+    font-weight: 700;
+}
+
+footer {
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 10px;
+}
+
+/* Navigation styles */
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--main-color);
+    font-family: 'Oleo Script', system-ui;
+    font-weight: 700;
+}
+}
