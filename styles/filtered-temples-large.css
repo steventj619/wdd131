@@ -51,15 +51,14 @@ ul{
 }
 main {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    flex-direction: column; /* Stack temple cards vertically */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     padding: 20px;
-    margin: 0 auto; /* Center horizontally */
-    max-width: 1200px; /* Adjust max-width as needed */
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
-/* Styling footer */
 header, footer {
     background-color: #31473A;
 }
@@ -87,11 +86,10 @@ footer {
  text-align: center;
 }
 
-/* For larger views */
 @media screen and (min-width: 650px) {
     main {
         display: grid;
-        grid-template-rows: auto 1fr; /* Ensure "Temple Selection" is above temple cards */
+        grid-template-rows: auto 1fr; 
         gap: 20px;
         padding: 20px;
         margin: 0 auto;

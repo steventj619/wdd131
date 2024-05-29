@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 * {
+	font-family: "Salsa", cursive;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
 }
 
 body {
+	font-family: "Salsa", cursive;
     display: grid;
     grid-template-rows: auto 1fr auto;
-    font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -106,12 +106,12 @@ footer {
 
 main {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    flex-direction: column; /* Stack temple cards vertically */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     padding: 20px;
-    margin: 0 auto; /* Center horizontally */
-    max-width: 1200px; /* Adjust max-width as needed */
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 figure {
@@ -171,7 +171,6 @@ figure {
     background-color: #f9f9f9;
 }
 
-/* For smaller views */
 @media screen and (max-width: 649px) {
     main {
         display: flex;
